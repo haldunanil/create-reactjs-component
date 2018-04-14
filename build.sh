@@ -36,7 +36,7 @@ do
 		sh create-index.js.sh $COMPONENT
 
 		# create $COMPONENT.js
-		sh create-component.js.sh $COMPONENT
+		sh create-component.jsx.sh $COMPONENT
 
 		# create $COMPONENT.css
 		sh create-component.css.sh $COMPONENT		
