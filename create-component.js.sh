@@ -7,4 +7,4 @@ class $1 extends Component {
   }
 }
 
-export default $1;" > src/components/$1/$1.jsx
+export default $1;" > src/components/$1/$1.js
