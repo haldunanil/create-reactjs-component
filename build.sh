@@ -41,6 +41,9 @@ do
 		# create $COMPONENT.css
 		sh create-component.css.sh $COMPONENT		
 
+		# Inform user that everything was created
+		echo $COMPONENT component was created.
+
 	fi
 
 done
