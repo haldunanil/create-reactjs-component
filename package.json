@@ -1,0 +1,10 @@
+{
+  "name": "create-react-component",
+  "version": "1.0.0",
+  "description": "A shortcut to create React.js component directories",
+  "scripts": {
+    "build": "bash create-component-dir.sh"
+  },
+  "author": "Haldun Anil (https://www.github.com/haldunanil)",
+  "license": "MIT"
+}
