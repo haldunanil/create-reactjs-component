@@ -1,6 +1,6 @@
 {
   "name": "create-reactjs-component",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A shortcut to create React.js component directories",
   "scripts": {
     "build": "bash build.sh"
