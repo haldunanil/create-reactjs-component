@@ -38,7 +38,7 @@ where the individual files look like the following:
 
 `index.js`
 
-```
+```javascript
 import Test from './Test';
 
 export default Test;
@@ -52,7 +52,7 @@ export default Test;
 
 `Test.js`
 
-```
+```javascript
 import React, { Component } from 'react';
 import './Test.css';
 
