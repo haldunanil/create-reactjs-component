@@ -1,10 +1,34 @@
 {
   "name": "create-reactjs-component",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A shortcut to create React.js component directories",
   "scripts": {
     "build": "bash build.sh"
   },
+  "bin": {
+    "create-reactjs-component": "./build.sh"
+  },
   "author": "Haldun Anil <info@haldunanil.com> (https://www.github.com/haldunanil)",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/haldunanil/create-reactjs-component.git"
+  },
+  "homepage": "https://github.com/haldunanil/create-reactjs-component",
+  "bugs": "https://github.com/haldunanil/create-reactjs-component/issues",
+  "tags": [
+    "react",
+    "reactjs",
+    "create",
+    "component",
+    "cli"
+  ],
+  "keywords": [
+    "react",
+    "reactjs",
+    "create",
+    "component",
+    "cli"
+  ],
+  "dependencies": {}
 }
