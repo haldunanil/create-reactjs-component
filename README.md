@@ -13,13 +13,13 @@ Note: the scripts are bash scripts and may not run on Windows machines. If that 
 
 # Install
 
-```
+```sh
 npm install -g create-reactjs-component
 ```
 
 # Example
 
-```
+```sh
 create-reactjs-component Test
 ```
 
@@ -46,8 +46,8 @@ export default Test;
 
 `Test.css`
 
-```
-# empty
+```css
+/* empty */
 ```
 
 `Test.js`
