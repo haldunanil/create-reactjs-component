@@ -42,7 +42,14 @@ do
 		sh create-component.css.sh $COMPONENT		
 
 		# Inform user that everything was created
-		echo $COMPONENT component was created.
+		echo $COMPONENT component was created. Looks like:
+		echo "
+src
+├── components
+	├── $COMPONENT
+		├── index.js
+		├── $COMPONENT.js
+		├── $COMPONENT.css"
 
 	fi
 
