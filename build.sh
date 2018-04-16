@@ -32,14 +32,23 @@ do
 		# create the component directory
 		mkdir src/components/$COMPONENT
 
+		# get location of build.sh
+		SOURCE="${BASH_SOURCE[0]}"
+		while [ -h "$SOURCE" ]; do # resolve $SOURCE until the file is no longer a symlink
+		  DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+		  SOURCE="$(readlink "$SOURCE")"
+		  [[ $SOURCE != /* ]] && SOURCE="$DIR/$SOURCE" # if $SOURCE was a relative symlink, we need to resolve it relative to the path where the symlink file was located
+		done
+		DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+
 		# create index.js
-		sh create-index.js.sh $COMPONENT
+		sh $DIR/create-index.js.sh $COMPONENT
 
 		# create $COMPONENT.js
-		sh create-component.js.sh $COMPONENT
+		sh $DIR/create-component.js.sh $COMPONENT
 
 		# create $COMPONENT.css
-		sh create-component.css.sh $COMPONENT		
+		sh $DIR/create-component.css.sh $COMPONENT		
 
 		# Inform user that everything was created
 		echo $COMPONENT component was created. Looks like:
