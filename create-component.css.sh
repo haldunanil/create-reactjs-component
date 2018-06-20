@@ -1,1 +1,0 @@
-echo "" > src/components/$1/$1.css

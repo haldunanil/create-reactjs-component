@@ -47,8 +47,14 @@ do
 		# create $COMPONENT.js
 		sh $DIR/create-component.js.sh $COMPONENT
 
-		# create $COMPONENT.css
-		sh $DIR/create-component.css.sh $COMPONENT		
+		# create $COMPONENT.scss
+		sh $DIR/create-component.scss.sh $COMPONENT
+
+		# create $COMPONENT.test.js
+		sh $DIR/create-component.test.js.sh $COMPONENT
+
+		# create $COMPONENT.test.js
+		sh $DIR/create-readme.md.sh $COMPONENT		
 
 		# Inform user that everything was created
 		echo $COMPONENT component was created. Looks like:
@@ -58,7 +64,10 @@ src
 	├── $COMPONENT
 		├── index.js
 		├── $COMPONENT.js
-		├── $COMPONENT.css"
+		├── $COMPONENT.test.js
+		├── $COMPONENT.scss
+		├── README.md
+		"
 
 	fi
 
