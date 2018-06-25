@@ -1,6 +1,6 @@
 {
   "name": "create-reactjs-component",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A shortcut to create React.js component directories",
   "scripts": {
     "create-index-js": "bash create-index.js.sh",

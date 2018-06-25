@@ -28,7 +28,7 @@ describe('$1', () => {
 
   const mountTestComponent = () => {
     if (!mounted$1) {
-      mounted$1 = render(
+      mounted$1 = mount(
         <$1 {...props}>{props.children}</$1>
       );
     }
