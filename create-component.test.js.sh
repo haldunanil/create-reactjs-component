@@ -10,27 +10,21 @@ describe('$1', () => {
 
   const shallowTestComponent = () => {
     if (!shallow$1) {
-      shallow$1 = shallow(
-        <$1 {...props}>{props.children}</$1>
-      );
+      shallow$1 = shallow(<$1 {...props} />);
     }
     return shallow$1;
   };
 
   const renderTestComponent = () => {
     if (!rendered$1) {
-      rendered$1 = render(
-        <$1 {...props}>{props.children}</$1>
-      );
+      rendered$1 = render(<$1 {...props} />);
     }
     return rendered$1;
   };
 
   const mountTestComponent = () => {
     if (!mounted$1) {
-      mounted$1 = mount(
-        <$1 {...props}>{props.children}</$1>
-      );
+      mounted$1 = mount(<$1 {...props} />);
     }
     return mounted$1;
   };  
