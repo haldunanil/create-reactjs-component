@@ -19,7 +19,11 @@ npm install -g create-reactjs-component
 ## Example
 
 ```sh
-create-reactjs-component Test
+create-react-component MyComponentName
+```
+or to specify a specific type of component
+```sh
+create-react-component --template container MyComponentName
 ```
 
 will create
