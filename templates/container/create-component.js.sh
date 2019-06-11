@@ -1,5 +1,7 @@
 echo "import React from 'react';
 import PropTypes from 'prop-types';
+import {connect} from 'react-redux';
+
 import styles from './$1.scss';
 
 const $1 = props => (
@@ -15,10 +17,21 @@ const $1 = props => (
 //   }
 // }
 
-const $1PropTypes = {
+$1.propTypes = {
 	// always use prop types!
 };
 
-$1.propTypes = $1PropTypes;
+const mapStateToProps = (state) => {
+	return {
+		// prop: state.path.to.value,
+	};
+};
 
-export default $1;" > src/components/$1/$1.js
+const mapDispatchToProps = (dispatch) => {
+	return {
+		// prop: () => dispatch(action),
+		onChangeObjectClass: (new_class) => dispatch(objectClassChangeHandler(new_class)),
+	};
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)($1);" > src/components/$1/$1.js
